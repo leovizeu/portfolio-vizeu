@@ -1,6 +1,6 @@
 function Menu() {
     return (
-        <div>
+        <div className="flex flex-col items-center justify-between p-24">
             <a href="#Home">Home</a>
             <a href="#Projects">Projects</a>
             <a href="#About me">About me</a>
