@@ -5,7 +5,7 @@ import config from '../../tailwind.config'
 
 export default function Home() {
   return (
-    <main>
+    <main className='bg-gray-200 mx-64'>
       <Menu/>
       <Hero/>
     </main>
