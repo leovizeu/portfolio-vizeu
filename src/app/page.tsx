@@ -1,20 +1,13 @@
 import Image from 'next/image'
 import Menu from './Components/Menu'
+import Hero from './Components/Hero'
+import config from '../../tailwind.config'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-300'>
-      <div className='z-10 max-w-5xl w-full items-center font-mono text-sm lg:flex'>
-              <div className='fixed left-10 top-0 flex w-full'>
-                <p>Portfolio</p>
-              </div>
-              <ul className='fixed left-60 top-0 flex w-full justify-evenly'>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">About me</a></li>
-                  <li><a href="">Projects</a></li>
-                  <li><a href="">Contact</a></li>
-              </ul>
-      </div>
+    <main>
+      <Menu/>
+      <Hero/>
     </main>
 
 
