@@ -1,12 +1,10 @@
-import Image from 'next/image'
-import Menu from './Components/Menu'
+import MyHeader from './Components/MyHeader'
 import Hero from './Components/Hero'
-import config from '../../tailwind.config'
 
 export default function Home() {
   return (
     <main className='bg-gray-200 mx-64'>
-      <Menu/>
+      <MyHeader/>
       <Hero/>
     </main>
 
