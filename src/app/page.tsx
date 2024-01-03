@@ -1,5 +1,6 @@
 import MyHeader from './Components/MyHeader'
 import Hero from './Components/Hero'
+import { CustomButtom } from './Components'
 
 export default function Home() {
   return (
