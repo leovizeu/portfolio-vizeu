@@ -1,6 +1,6 @@
 "use client";
 
-import { CustomButtom } from "./index"
+import { CustomButtom } from "."
 
 function Hero() {
     const handleScroll = () => {
@@ -9,8 +9,8 @@ function Hero() {
 
     return (
         <div className="bg-gray-200">
-            <h1 className="text-black text-6xl font-bold pt-20 pl-12">Leonardo Vizeu</h1>
-            <p className="text-black text-6xl pt-52 pl-12">
+            <h1 className="text-black text-7xl font-extrabold pt-20 pl-12">Leonardo Vizeu</h1>
+            <p className="text-black text-6xl pt-52 pl-12 leading-snug">
                     Greetings! <br />
                     I’m Full Stack Developer hoping to change carrers and start this new journey as a software developer. Here's what i do:
                 </p>
