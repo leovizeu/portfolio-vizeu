@@ -12,7 +12,7 @@ function MyHeader() {
             <div className="flex justify-start absolute">
                 <p className="font-medium text-black pl-10">Portfolio</p>
             </div>
-            <ul className='flex justify-end font-light gap-10 pr-10'>
+            <ul className='flex justify-end font-light-bold gap-10 pr-10'>
                 <li className="text-black hover:text-gray-500"><a href="#">Home</a></li>
                 <li className="text-black hover:text-gray-500"><a href="#">About me</a></li>
                 <li className="text-black hover:text-gray-500"><a href="#">Projects</a></li>

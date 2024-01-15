@@ -1,9 +1,9 @@
-import MyHeader from './MyHeader'
+import Header from './Header'
 import Hero from './Hero'
 import CustomButtom from './CustomButtom'
 
 export {
-    MyHeader, Hero, CustomButtom
+    Header, Hero, CustomButtom
 }
 
 /* This page is for easily import our components to the main page project */

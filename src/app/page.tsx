@@ -1,10 +1,14 @@
-import MyHeader from './Components/MyHeader'
+import MyHeader from './Components/Header'
 import Hero from './Components/Hero'
 import { CustomButtom } from './Components'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className='bg-gray-200 mx-64'>
+    <main className='bg-gradient-to-tr from-slate-950 via-sky-950 to-sky-600 mx-64'>
+      <div className="absolute opacity-60 ">
+        <Image src={"/bg-1.png"} alt={""} width={750} height={0}></Image>
+      </div>
       <MyHeader/>
       <Hero/>
     </main>
