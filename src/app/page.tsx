@@ -5,10 +5,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className='bg-gradient-to-tr from-slate-950 via-sky-950 to-sky-600 mx-64'>
-      <div className="absolute opacity-60 ">
-        <Image src={"/bg-1.png"} alt={""} width={750} height={0}></Image>
-      </div>
+    <main className='bg-gray-100 mx-64 pb-28'>
       <MyHeader/>
       <Hero/>
     </main>
