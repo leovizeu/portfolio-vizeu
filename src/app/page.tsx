@@ -1,13 +1,13 @@
 import MyHeader from './Components/Header'
 import Hero from './Components/Hero'
-import { CustomButtom } from './Components'
-import Image from 'next/image'
+import Projects from './Components/Projects'
 
 export default function Home() {
   return (
-    <main className='bg-gray-100 mx-64 pb-28'>
+    <main className='bg-gray-100 mx-64'>
       <MyHeader/>
       <Hero/>
+      <Projects />
     </main>
 
 
