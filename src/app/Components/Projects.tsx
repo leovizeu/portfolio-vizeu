@@ -5,7 +5,7 @@ function Projects() {
   return (
     <div>
       <div className='text-center mt-28'>
-        <h2 className='text-black text-6xl font-normal pb-24'>
+        <h2 className='text-black text-6xl font-normal py-24'>
           Projects
         </h2>
         <h3 className='text-black text-5xl font-normal'>

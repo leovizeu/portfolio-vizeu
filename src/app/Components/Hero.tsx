@@ -10,8 +10,8 @@ function Hero() {
 
     return (
         <div className="">
-            <h1 className="text-black text-6xl font-bold pt-20 pl-12">Leonardo Vizeu</h1>
-            <p className="text-black text-6xl pt-52 pl-12 leading-snug">
+            <h1 className="text-black text-6xl font-bold p-20 pl-12">Leonardo Vizeu</h1>
+            <p className="text-black text-6xl py-48 px-12 leading-snug">
                 Greetings! <br />
                 I’m Full Stack Developer hoping to change carrers and build awesome applications. Here's what i do:
             </p>

@@ -1,4 +1,5 @@
 import React, {Fragment} from "react"
+import Image from "next/image"
 import {Menu, Transition} from "@headlessui/react"
 import { ChevronDownIcon} from "@heroicons/react/20/solid"
 
@@ -7,24 +8,42 @@ function classNames(...classes: any[]) {
 }
 
 function MyHeader() {
+  let Links =[
+    {name: 'Home', href: '#'},
+    {name: 'About me', href: '#'},
+    {name: 'Projects', href: '#'},
+    {name: 'Experience', href: '#'},
+    {name: 'Contact', href: '#'},
+  ]
     return (
-        <header className='font-sans py-8'>
-            <div className="flex justify-start absolute">
-                <p className="font-medium text-black pl-10">Portfolio</p>
+        <header className='shadow-md w-full fixed top-0 left-0 font-sans'>
+            <div className="md:flex py-4 md:px-10 px-7">
+              <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-black">
+                <span className="text-3xl text-indigo-600 mr-1 pt-2">
+                  <Image src="/document-text.svg" alt="icon" height={25} width={25}></Image>
+                </span>
+                Portfolio
+              </div>
+              <ul className='md:flex md:items-center md:pb-0 md:static absolute '>
+                {
+                  Links.map((link =>
+                    <li key={link.name} className="md:ml-8 text-xl">
+                      <a href={link.href} className="text-black hover:text-gray-500 duration-500">{link.name}</a>
+                    </li>
+                    ))
+                }
+              </ul>
             </div>
-            <ul className='flex justify-end font-light-bold gap-10 pr-10'>
-                <li className="text-black hover:text-gray-500"><a href="#">Home</a></li>
-                <li className="text-black hover:text-gray-500"><a href="#">About me</a></li>
-                <li className="text-black hover:text-gray-500"><a href="#">Projects</a></li>
-                <li className="text-black hover:text-gray-500"><a href="#">Experience</a></li>
-                <li className="text-black hover:text-gray-500"><a href="#">Contact</a></li>
-                <li>
-                  
-                </li>
-            </ul>
         </header>
     )
 }
+/*
+<li className="text-black hover:text-gray-500"><a href="#">Home</a></li>
+<li className="text-black hover:text-gray-500"><a href="#">About me</a></li>
+<li className="text-black hover:text-gray-500"><a href="#">Projects</a></li>
+<li className="text-black hover:text-gray-500"><a href="#">Experience</a></li>
+<li className="text-black hover:text-gray-500"><a href="#">Contact</a></li>
+*/
 
 /*<Menu as="div" className="relative inline-block text-left">
                     <div>
