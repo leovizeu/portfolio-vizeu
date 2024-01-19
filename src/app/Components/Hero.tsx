@@ -9,7 +9,7 @@ function Hero() {
     }
 
     return (
-        <div className="">
+        <div className="pt-36">
             <h1 className="text-black text-6xl font-bold p-20 pl-12">Leonardo Vizeu</h1>
             <p className="text-black text-6xl py-48 px-12 leading-snug">
                 Greetings! <br />
