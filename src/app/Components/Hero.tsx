@@ -10,20 +10,20 @@ function Hero() {
 
     return (
         <div className="pt-36">
-            <h1 className="text-black text-6xl font-bold p-20 pl-12">Leonardo Vizeu</h1>
-            <p className="text-black text-6xl py-48 px-12 leading-snug">
+            <h1 className="text-black text-6xl font-bold md:p-20 md:pl-12 pl-3">Leonardo Vizeu</h1>
+            <p className="text-black text-6xl md:py-48 md:px-12 md:leading-snug px-3 py-12">
                 Greetings! <br />
                 I’m Full Stack Developer hoping to change carrers and build awesome applications. Here's what i do:
             </p>
-            <div className="flex flex-row-reverse pr-5 pb-5">
+            
+        </div>
+    )
+}
+/*<div className="flex flex-row-reverse pr-5 pb-5">
                 <CustomButtom
                     title ="Contact me"
                     containerStyles = "bg-blue-500 text-white font-bold rounded-full p-2 hover:bg-black hover:text-white"
                     handleClick = {handleScroll}
                 />
-            </div>
-        </div>
-    )
-}
-
+            </div>*/
 export default Hero

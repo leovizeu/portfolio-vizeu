@@ -17,18 +17,18 @@ function MyHeader() {
   ]
     return (
         <header className='shadow-md w-full fixed top-0 left-0 font-sans'>
-            <div className="md:flex items-center bg-slate-100 justify-between py-8 px-56">
+            <div className="md:flex items-center bg-slate-100 justify-between py-8 md:px-56">
               <div className="font-bold text-2xl cursor-pointer flex items-center text-black">
                 <span>
                   <Image src="/document-text.svg" alt="icon" height={25} width={25}></Image>
                 </span>
                 Portfolio
               </div>
-              <ul className='md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-slate-100 md:z-auto z-[-1] 
+              <ul className='flex justify-end md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-slate-100 md:z-auto z-[-1] 
               left-0 w-full'>
                 {
                   Links.map((link =>
-                    <li key={link.name} className="md:ml-8 text-m md:my-0 justify-between">
+                    <li key={link.name} className="md:ml-8 text-m md:my-0">
                       <a href={link.href} className="text-black hover:text-gray-500 duration-500">{link.name}</a>
                     </li>
                     ))
