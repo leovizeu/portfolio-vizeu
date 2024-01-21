@@ -21,6 +21,12 @@ function Projects() {
         <Image src='/ngo-phone1.png' alt='NGO Desktop' height={0} width={200}></Image>
         </div>
       </div>
+
+      <div>
+        <p>
+          lorem ipsum
+        </p>
+      </div>
     </div>
   )
 }
