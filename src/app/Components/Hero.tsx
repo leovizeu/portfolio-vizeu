@@ -4,25 +4,74 @@ import { CustomButtom } from "."
 import Image from "next/image";
 
 function Hero() {
+
     const handleScroll = () => {
 
     }
 
     return (
         <div className="font-mono">
-            <div className="h-96 py-80"></div>
-            <p className="text-blue-500 font-light md:pl-12 pl-3 py-2">
-                Greetings! My name is:
-            </p>
-            <h1 className="text-white text-4xl font-bold md:pl-12 pl-3 py-2 font-sans">
-                Leonardo Vizeu
-                <br />
-                I like building online experiences.
-            </h1>
-            <p className="text-blue-500 md:px-12 md:leading-snug px-3 py-2">
-                I’m Full Stack Developer hoping to change carrers and build awesome applications. Here's what i do:
-            </p>
+            <div className="py-96 pl-3 md:pl-12">
+                <p className="text-blue-500 font-light py-2">
+                    Greetings! My name is
+                </p>
+                <h1 className="text-white text-4xl font-bold py-2 font-sans">
+                    Leonardo Vizeu
+                    <br />
+                    I like building online experiences.
+                </h1>
+                <p className="text-gray-500 text-sm md:w-6/12 md:leading-snug py-2">
+                    I'm a dedicated software engineer who enjoys crafting web applications.
+                    My goal is to build innovative and user-friendly digital experiences.
+                    I started developing my own game, allowing me to express my skills in both practical and 
+                    imaginative aspects of software engineering. <br />
+                    Here's what i do:
+                </p>
+            </div>
             
+            <div className="py-32 md:px-80 ">
+                <div className="md:flex">
+                    <div className="md:flex md:items-center md:shrink-0">
+                        <Image 
+                        src='/DSCF1428.jpg' 
+                        height={550} 
+                        width={550} 
+                        alt="Leonardo's photo"
+                        className="aspect-square object-none object-top rounded-full md:h-60 md:w-60 md:object-cover"
+                        />
+                    </div>
+                    <div className="p-8">
+                        <div className="flex absolute uppercase tracking-wide text-xl text-blue-500 font-semibold">
+                            0.
+                        </div>
+                        <h1 className="flex pl-7 text-white text-xl">
+                            About me
+                        </h1>
+                        <p className="mt-2 text-slate-500">
+                            Welcome! My name is Leonardo and i enjoy creating modern web applications. I originaly 
+                            started my journey as a self-taught Java developer but have since grown to work with
+                            various technologies, including Javascript, Next.js, Node.js, and NoSQL databases.
+                            (Currently seeking for a job opportunity)
+                        </p>
+                        <br />
+                        <p className="text-sm font-bold">
+                            Some Technologies I use are:
+                        </p>
+                        <div className="flex gap-5">
+                            <ul className="text-blue-500 list-disc pl-5 pt-5">
+                                <li>Javascript</li>
+                                <li>Next.js</li>
+                                <li>Node.js</li>
+                            </ul>
+                            <ul className="text-blue-500 list-disc pl-5 pt-5">
+                                <li>Java</li>
+                                <li>Spring</li>
+                                <li>Python</li>
+                            </ul>  
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
