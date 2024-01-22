@@ -1,35 +1,48 @@
+"use client"
+
 import React, {Fragment} from "react"
-import Image from "next/image"
-import {Menu, Transition} from "@headlessui/react"
 import { ChevronDownIcon} from "@heroicons/react/20/solid"
+import { CustomButtom } from "./"
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
 }
 
 function MyHeader() {
+
+  const handleScroll = () => {
+
+  }
+
   let Links =[
-    {name: 'Home', href: '#'},
-    {name: 'About me', href: '#'},
-    {name: 'Projects', href: '#'},
-    {name: 'Experience', href: '#'},
-    {name: 'Contact', href: '#'},
+    {list: '0',name: 'About me', href: '#'},
+    {list: '1',name: 'Experience', href: '#'},
+    {list: '2',name: 'Projects', href: '#'},
+    {list: '3',name: 'Contact', href: '#'},
   ]
     return (
-        <header className='shadow-md w-full blue-sm fixed top-0 left-0 font-sans'>
-            <div className="md:flex items-center justify-between py-8 md:px-56">
-              <div className="font-bold text-2xl cursor-pointer flex items-center text-black">
-                Portfolio
-              </div>
-              <ul className='flex justify-end md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] 
-              left-0 w-full'>
-                {
-                  Links.map((link =>
-                    <li key={link.name} className="md:ml-8 text-m md:my-0">
-                      <a href={link.href} className="text-black hover:text-gray-500 duration-500">{link.name}</a>
-                    </li>
-                    ))
-                }
+        <header className='shadow-md w-full blue-sm fixed top-0 left-0 font-mono'>
+          <div className="md:flex items-center justify-between py-8 md:px-56">
+            <div className="font-bold text-2xl cursor-pointer flex items-center text-white">
+              Portfolio
+            </div>
+            <ul className='flex justify-end md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] 
+            left-0 w-full'>
+              {
+                Links.map((link =>
+                  <li key={link.name} className="md:ml-8 text-xs md:my-0">
+                    <p className="flex absolute text-blue-500">{link.list}. </p>
+                    <a href={link.href} className="flex text-white hover:text-gray-500 duration-500 pl-5">{link.name}</a>
+                  </li>
+                  ))
+              }
+              <div className="flex flex-row-reverse pr-5 pl-5">
+              <CustomButtom
+                  title ="Resume"
+                  containerStyles = "border border-blue-500 text-blue-500 font-bold rounded-md p-2 hover:text-white duration-500"
+                  handleClick = {handleScroll}
+              />
+          </div>
               </ul>
             </div>
         </header>
