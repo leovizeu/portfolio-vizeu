@@ -2,6 +2,12 @@
 import { Disclosure } from '@headlessui/react'
 import { ChevronUpIcon } from '@heroicons/react/20/solid'
 
+/*
+  * How am i gonna reuse this Disclosure tabs?
+  * I need to make just like the CustomButtom.
+  * The Span and the Disclosure.Panel need to have some {logi} to be reused.
+  * I need to make a new component and pass the props to it.
+*/
 export default function Example() {
   return (
     <div className="w-full px-4 pt-16">

@@ -4,7 +4,7 @@ import Projects from './Components/Projects'
 
 export default function Home() {
   return (
-    <main className='bg-gray-100 xl:px-64 lg:px-48 md:px-12 sm:px-2'>
+    <main className='bg-[#0F2027] xl:px-64 lg:px-48 md:px-12 sm:px-2'>
       <MyHeader/>
       <Hero/>
       <Projects />

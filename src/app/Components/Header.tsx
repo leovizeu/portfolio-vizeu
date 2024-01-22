@@ -16,15 +16,12 @@ function MyHeader() {
     {name: 'Contact', href: '#'},
   ]
     return (
-        <header className='shadow-md w-full fixed top-0 left-0 font-sans'>
-            <div className="md:flex items-center bg-slate-100 justify-between py-8 md:px-56">
+        <header className='shadow-md w-full blue-sm fixed top-0 left-0 font-sans'>
+            <div className="md:flex items-center justify-between py-8 md:px-56">
               <div className="font-bold text-2xl cursor-pointer flex items-center text-black">
-                <span>
-                  <Image src="/document-text.svg" alt="icon" height={25} width={25}></Image>
-                </span>
                 Portfolio
               </div>
-              <ul className='flex justify-end md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-slate-100 md:z-auto z-[-1] 
+              <ul className='flex justify-end md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] 
               left-0 w-full'>
                 {
                   Links.map((link =>

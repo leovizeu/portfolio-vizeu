@@ -1,8 +1,14 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
 import Example from './Disclosure'
+import CustomButtom from './CustomButtom'
 
 function Projects() {
+  const handleScroll = () => {
+  }
+
   return (
     <div>
       <div className='text-center mt-28'>
@@ -30,7 +36,26 @@ function Projects() {
           The objective of this is to build a full responsive site from scratch using some easy-to-use technologies.
         </p>
       </div>
+
       <Example />
+      <br />
+      <br />
+      <br />
+      <div className="flex flex-row-reverse justify-center pr-5 pb-5">
+        <CustomButtom
+          title ="Go to Repository"
+          containerStyles = "bg-green-200 text-black font-bold rounded-full p-2 hover:bg-black hover:text-white"
+          handleClick = {handleScroll}
+        />
+      </div>
+
+      <div className="flex flex-row-reverse justify-center pr-5 pb-5">
+        <CustomButtom
+          title ="Go to the Site"
+          containerStyles = "bg-green-200 text-black font-bold rounded-full p-2 hover:bg-black hover:text-white"
+          handleClick = {handleScroll}
+        />
+      </div>
     </div>
   )
 }

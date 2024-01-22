@@ -10,9 +10,11 @@ function Hero() {
 
     return (
         <div className="pt-36">
-            <h1 className="text-black text-6xl font-bold md:p-20 md:pl-12 pl-3">Leonardo Vizeu</h1>
-            <p className="text-black text-6xl md:py-48 md:px-12 md:leading-snug px-3 py-12">
-                Greetings! <br />
+            <p className="text-blue-600 font-light md:p-20 md:pl-12 pl-3">
+                Greetings! My name is:
+            </p>
+            <h1 className="text-white text-6xl font-bold md:p-20 md:pl-12 pl-3">Leonardo Vizeu</h1>
+            <p className="text-blue-500 text-6xl md:py-48 md:px-12 md:leading-snug px-3 py-12">
                 I’m Full Stack Developer hoping to change carrers and build awesome applications. Here's what i do:
             </p>
             
