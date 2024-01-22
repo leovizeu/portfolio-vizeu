@@ -23,8 +23,10 @@ function Projects() {
       </div>
 
       <div>
-        <p>
-          lorem ipsum
+        <p className='text-black text-1xl font-normal text-center p-10'>
+          This project I made for a free Web Design course from FATEC Technology School.
+          <br />
+          The objective of this is to build a full responsive site from scratch using some easy-to-use technologies.
         </p>
       </div>
     </div>
