@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Example from './Disclosure'
 
 function Projects() {
   return (
@@ -29,6 +30,7 @@ function Projects() {
           The objective of this is to build a full responsive site from scratch using some easy-to-use technologies.
         </p>
       </div>
+      <Example />
     </div>
   )
 }
