@@ -2,11 +2,16 @@ import App from 'next/app'
 import MyHeader from './Components/Header'
 import Hero from './Components/Hero'
 import Projects from './Components/Projects'
+import { createRoot } from 'react-dom/client';
 
 export default function Home() {
+
+  const root = createRoot(document.querySelector("#root") || document.createElement("div"));
+
+  root.render(<App />)
+  
   return (
     <main className='bg-[#060e14] xl:px-64 lg:px-48 md:px-12 sm:px-2'>
-      <App />
       <MyHeader/>
       <Hero/>
       <Projects />
