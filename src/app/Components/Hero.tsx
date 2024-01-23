@@ -53,7 +53,7 @@ function Hero() {
                 
             </div>
             
-            <div className="md:py-20 md:px-80" id="about">
+            <div className="xl:py-20 xl:px-80" id="about">
                 <div className="md:flex">
                     <div className="md:flex md:items-center md:shrink-0">
                         <Image 
