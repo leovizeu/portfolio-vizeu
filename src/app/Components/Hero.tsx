@@ -11,7 +11,7 @@ function Hero() {
 
     return (
         <div className="font-mono">
-            <div className="py-96 pl-3 md:pl-12">
+            <div className="py-80 pl-3 md:pl-12">
                 <p className="text-blue-500 font-light py-2">
                     Greetings! My name is
                 </p>
@@ -29,7 +29,7 @@ function Hero() {
                 </p>
             </div>
             
-            <div className="py-32 md:px-80 ">
+            <div className="md:py-20 md:px-80 ">
                 <div className="md:flex">
                     <div className="md:flex md:items-center md:shrink-0">
                         <Image 
