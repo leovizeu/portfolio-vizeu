@@ -1,14 +1,12 @@
-import App from 'next/app'
-import MyHeader from './Components/Header'
+import { Experience } from './Components'
 import Hero from './Components/Hero'
 import Projects from './Components/Projects'
 
 export default function Home() {
-  <App />
   return (
     <main className='bg-[#060e14] xl:px-64 lg:px-48 md:px-12 sm:px-2'>
-      <MyHeader/>
       <Hero/>
+      <Experience />
       <Projects />
     </main>
 

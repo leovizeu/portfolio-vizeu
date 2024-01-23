@@ -14,10 +14,10 @@ function MyHeader() {
   }
 
   let Links =[
-    {list: '0',name: 'About', href: '#'},
-    {list: '1',name: 'Experience', href: '#'},
-    {list: '2',name: 'Projects', href: '#'},
-    {list: '3',name: 'Contact', href: '#'},
+    {list: '0',name: 'About', href: '#about'},
+    {list: '1',name: 'Experience', href: '#experience'},
+    {list: '2',name: 'Projects', href: '#projects'},
+    {list: '3',name: 'Contact', href: '#contact'},
   ]
     return (
         <header className='fixed backdrop-blur shadow-md w-full blue-sm top-0 left-0 font-mono'>

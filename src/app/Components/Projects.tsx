@@ -10,7 +10,7 @@ function Projects() {
   }
 
   return (
-    <div>
+    <div id='projects'>
       <div className='text-center mt-28'>
         <h2 className='text-black text-6xl font-normal py-24'>
           Projects

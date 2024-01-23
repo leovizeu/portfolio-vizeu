@@ -1,6 +1,6 @@
 "use client";
 
-import { CustomButtom } from "."
+import { CustomButtom } from ".";
 import Image from "next/image";
 
 function Hero() {
@@ -27,9 +27,33 @@ function Hero() {
                     imaginative aspects of software engineering. <br />
                     Here's what i do:
                 </p>
+                <div className="flex justify-start">
+                    <div>
+                        <div className="flex flex-row pr-3 py-4">
+                            <CustomButtom
+                                title ="Projects"
+                                containerStyles = "bg-blue-500 text-white text-xs font-bold rounded-md p-2 hover:bg-white hover:text-blue-500"
+                                handleClick = {handleScroll}
+                            />
+                            <a href='#projects'></a>
+                        </div>
+                    </div>
+                    <div className="flex px-2 items-center">
+                     <a href="https://github.com/leovizeu" target="_blank">
+                        <Image src='/github.svg' height={25} width={30} alt="Github Logo"  className="hover:w-10 duration-200"></Image>
+                    </a>   
+                    </div>
+                    <div className="flex px-2 items-center">
+                     <a href="https://www.linkedin.com/in/leovizeu/" target="_blank">
+                        <Image src='/linked.svg' height={25} width={30} alt="Github Logo"  className="hover:w-10 duration-200"></Image>
+                    </a>   
+                    </div>
+                    
+                </div>
+                
             </div>
             
-            <div className="md:py-20 md:px-80 ">
+            <div className="md:py-20 md:px-80" id="about">
                 <div className="md:flex">
                     <div className="md:flex md:items-center md:shrink-0">
                         <Image 
@@ -54,7 +78,7 @@ function Hero() {
                             (Currently seeking for a job opportunity)
                         </p>
                         <br />
-                        <p className="text-sm font-bold">
+                        <p className="text-sm font-bold text-white">
                             Some Technologies I use are:
                         </p>
                         <div className="flex gap-5">
