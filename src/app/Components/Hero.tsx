@@ -53,7 +53,7 @@ function Hero() {
                 
             </div>
             
-            <div className="xl:py-20 xl:px-80" id="about">
+            <div className="xl:py-20 xl:px-10" id="about">
                 <div className="md:flex">
                     <div className="md:flex md:items-center md:shrink-0">
                         <Image 
@@ -75,6 +75,7 @@ function Hero() {
                             Welcome! My name is Leonardo and i enjoy creating modern web applications. I originaly 
                             started my journey as a self-taught Java developer but have since grown to work with
                             various technologies, including Javascript, Next.js, Node.js, and NoSQL databases.
+                            <br />
                             (Currently seeking for a job opportunity)
                         </p>
                         <br />
