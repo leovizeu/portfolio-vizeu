@@ -16,7 +16,7 @@ function MyHeader() {
   let Links =[
     {list: '0',name: 'About', href: '#about'},
     {list: '1',name: 'Experience', href: '#experience'},
-    {list: '2',name: 'Projects', href: '#projects'},
+    {list: '2',name: 'Projects', href: '/Projs'},
     {list: '3',name: 'Contact', href: '#contact'},
   ]
     return (

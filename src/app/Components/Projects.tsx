@@ -11,13 +11,19 @@ function Projects() {
 
   return (
     <div id='projects'>
-      <div className='text-center mt-28'>
-        <h2 className='text-black text-6xl font-normal py-24'>
-          Projects
-        </h2>
-        <h3 className='text-black text-5xl font-normal'>
-          You are the Hope!
-        </h3>
+      <h1 className="flex justify-center pl-7 text-white text-xl">
+        <div className="flex absolute pr-44 uppercase tracking-wide text-xl text-blue-500 font-semibold">
+          2.
+        </div>
+          My Projects
+      </h1>
+      
+      <div className='flex justify-between'>
+        <ul>
+          <li>You are the hope!</li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
 
       <div className='flex justify-center mt-16'>
