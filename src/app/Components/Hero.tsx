@@ -2,6 +2,8 @@
 
 import { CustomButtom } from ".";
 import Image from "next/image";
+import React from "react";
+import { Typewriter } from "react-simple-typewriter";
 
 function Hero() {
 
@@ -9,11 +11,29 @@ function Hero() {
 
     }
 
+    const Typo = () => {
+        return (
+            <div className="App">
+                <h1 className="text-blue-500 font-light py-2 inline-block whitespace-nowrap overflow-hidden">
+                    <Typewriter
+                        words={['Greetings! My name is']}
+                        loop
+                        cursor
+                        cursorStyle='_'
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                        />
+                </h1>
+            </div>
+        )
+    }
+
     return (
         <div className="font-mono">
             <div className="py-80 pl-3 md:pl-12">
-                <p className="text-blue-500 font-light py-2">
-                    Greetings! My name is
+                <p className="text-blue-500 font-light py-2 inline-block whitespace-nowrap overflow-hidden">
+                    {Typo()}
                 </p>
                 <h1 className="text-white text-4xl font-bold py-2 font-sans">
                     Leonardo Vizeu
@@ -40,12 +60,14 @@ function Hero() {
                     </div>
                     <div className="flex px-2 items-center">
                      <a href="https://github.com/leovizeu" target="_blank">
-                        <Image src='/github.svg' height={25} width={30} alt="Github Logo"  className="hover:w-10 duration-200"></Image>
+                        <Image src='/github.svg' height={25} width={30} alt="Github Logo"  
+                        className="transition ease-in-out delay-150 hover:-translate-y-1 duration-80"></Image>
                     </a>   
                     </div>
                     <div className="flex px-2 items-center">
                      <a href="https://www.linkedin.com/in/leovizeu/" target="_blank">
-                        <Image src='/linked.svg' height={25} width={30} alt="Github Logo"  className="hover:w-10 duration-200"></Image>
+                        <Image src='/linked.svg' height={25} width={30} alt="Github Logo"  
+                        className="transition ease-in-out delay-150 hover:-translate-y-1 duration-80"></Image>
                     </a>   
                     </div>
                     
