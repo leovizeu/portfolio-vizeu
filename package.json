@@ -12,9 +12,9 @@
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",
     "boxicons": "^2.1.4",
-    "next": "^14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "styled-components": "^6.1.3"
   },

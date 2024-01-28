@@ -50,7 +50,7 @@ function Projects() {
       <div className="flex flex-row-reverse justify-center pr-5 pb-5">
         <CustomButtom
           title ="Go to Repository"
-          containerStyles = "bg-green-200 text-black font-bold rounded-full p-2 hover:bg-black hover:text-white"
+          containerStyles = "bg-blue-200 text-blue-700 font-bold rounded-full p-2 hover:bg-blue-500 hover:text-white"
           handleClick = {handleScroll}
         />
       </div>
@@ -58,7 +58,7 @@ function Projects() {
       <div className="flex flex-row-reverse justify-center pr-5 pb-5">
         <CustomButtom
           title ="Go to the Site"
-          containerStyles = "bg-green-200 text-black font-bold rounded-full p-2 hover:bg-black hover:text-white"
+          containerStyles = "bg-blue-200 text-blue-700 font-bold rounded-full p-2 hover:bg-blue-500 hover:text-white"
           handleClick = {handleScroll}
         />
       </div>

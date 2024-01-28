@@ -21,7 +21,7 @@ function MyHeader() {
   ]
     return (
         <header className='fixed backdrop-blur shadow-md w-full blue-sm top-0 left-0 font-mono'>
-          <div className="md:flex items-center justify-between py-8 md:px-56">
+          <div className="md:flex items-center justify-between py-8 xl:px-56">
             <div className="font-bold text-2xl cursor-pointer flex items-center text-white">
               Portfolio
             </div>
