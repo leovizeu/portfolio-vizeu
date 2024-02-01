@@ -96,7 +96,7 @@ function Hero() {
                         <p className="mt-2 text-slate-500">
                             Welcome! My name is Leonardo and i enjoy creating modern web applications. I originaly 
                             started my journey as a self-taught Java developer but have since grown to work with
-                            various technologies, including Javascript, Next.js, Node.js, and NoSQL databases.
+                            multiple technologies, including Javascript, Next.js, Node.js, and NoSQL databases.
                             <br />
                             (Currently seeking for a job opportunity)
                         </p>

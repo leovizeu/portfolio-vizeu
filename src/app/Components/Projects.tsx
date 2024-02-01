@@ -4,6 +4,8 @@ import React from 'react'
 import Image from 'next/image'
 import Example from './Disclosure'
 import CustomButtom from './CustomButtom'
+import Link from 'next/link'
+import router from 'next/router'
 
 function Projects() {
   const handleScroll = () => {
@@ -18,11 +20,16 @@ function Projects() {
           My Projects
       </h1>
       
-      <div className='flex justify-between'>
-        <ul>
-          <li>You are the hope!</li>
-          <li></li>
-          <li></li>
+      <div className='flex justify-between font-mono'>
+        <ul className='text-blue-500 list-disc pl-5 pt-5'>
+          <li>
+            <Link href="/?projeto=1" legacyBehavior>
+            <a>Car Renting and Selling</a>
+            </Link>
+          </li>
+          <li><a href="">You are the hope</a></li>
+          <li><a href="">Prepare Yourself School</a></li>
+          <li><a href="">Task Scheduling Open Source</a></li>
         </ul>
       </div>
 
