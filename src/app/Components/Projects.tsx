@@ -5,7 +5,6 @@ import Image from 'next/image'
 import Example from './Disclosure'
 import CustomButtom from './CustomButtom'
 import Link from 'next/link'
-import router from 'next/router'
 
 function Projects() {
   const handleScroll = () => {
