@@ -12,8 +12,8 @@ function Projects() {
 
   return (
     <div id='projects'>
-      <h1 className="flex justify-center pl-7 text-white text-xl">
-        <div className="flex absolute pr-44 uppercase tracking-wide text-xl text-blue-500 font-semibold">
+      <h1 className="flex justify-center pl-7 text-white text-2xl">
+        <div className="flex absolute pr-44 uppercase tracking-wide text-2xl text-blue-500 font-semibold">
           2.
         </div>
           My Projects
