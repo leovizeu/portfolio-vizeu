@@ -30,9 +30,8 @@ function MyHeader() {
               {
                 Links.map((link =>
                   <div key={link.name} className="md:ml-8 text-xs md:my-0">
-                    <div className="flex absolute text-blue-500">{link.list}.
-                      <a href={link.href} className="flex text-white hover:text-gray-500 duration-500 pl-5">{link.name}</a>
-                    </div>
+                    <div className="flex absolute text-blue-500">{link.list}. </div>
+                    <a href={link.href} className="flex text-white hover:text-gray-500 duration-500 pl-5">{link.name}</a>
                   </div>
                   ))
               }
