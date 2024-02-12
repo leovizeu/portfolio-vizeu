@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Example from './Disclosure'
 import CustomButtom from './CustomButtom'
 import Link from 'next/link'
+import Card from './Card'
 
 function Projects() {
   const handleScroll = () => {
@@ -18,6 +19,15 @@ function Projects() {
         </div>
           My Projects
       </h1>
+
+      <Card 
+      title={'Car Renting'} 
+      image={<Image src="/CarRentBoth.png" 
+      alt="Car Rent" 
+      height={300} 
+      width={300} />} 
+      href={''}      
+      />
       
       <div className='flex justify-between font-mono'>
         <ul className='text-blue-500 list-disc pl-5 pt-5'>

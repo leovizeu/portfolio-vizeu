@@ -16,7 +16,7 @@ function MyHeader() {
   let Links =[
     {list: '0',name: 'About', href: '#about'},
     {list: '1',name: 'Experience', href: '#experience'},
-    {list: '2',name: 'Projects', href: '/Projs'},
+    {list: '2',name: 'Projects', href: '#projects'},
     {list: '3',name: 'Contact', href: '#contact'},
   ]
     return (
@@ -30,8 +30,9 @@ function MyHeader() {
               {
                 Links.map((link =>
                   <div key={link.name} className="md:ml-8 text-xs md:my-0">
-                    <p className="flex absolute text-blue-500">{link.list}. </p>
-                    <a href={link.href} className="flex text-white hover:text-gray-500 duration-500 pl-5">{link.name}</a>
+                    <div className="flex absolute text-blue-500">{link.list}.
+                      <a href={link.href} className="flex text-white hover:text-gray-500 duration-500 pl-5">{link.name}</a>
+                    </div>
                   </div>
                   ))
               }
