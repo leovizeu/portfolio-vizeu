@@ -21,13 +21,14 @@ function Projects() {
       </h1>
 
       <Card 
-      title={'Car Renting'} 
-      image={<Image src="/CarRentBoth.png" 
-      alt="Car Rent" 
-      height={300} 
-      width={300} />} 
-      href={''}      
-      />
+        title={'Car Renting'}
+        href={'https://car-selling-site-nine.vercel.app'}
+        handleClick={handleScroll}
+      >
+        <div>
+          <Image src='/carselling.png' alt='Car Selling Site'  height={368} width={960} objectFit='contain'/>
+        </div>
+      </Card>
       
       <div className='flex justify-between font-mono'>
         <ul className='text-blue-500 list-disc pl-5 pt-5'>
