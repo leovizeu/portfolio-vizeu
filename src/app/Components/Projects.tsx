@@ -22,13 +22,13 @@ function Projects() {
 
       <Card 
         title={'Car Renting'}
-        href={'https://car-selling-site-nine.vercel.app'}
+        title2={'SourceCode'}
+        live={'https://car-selling-site-nine.vercel.app'}
+        code={'https://github.com/leovizeu/car-selling-site'}
         handleClick={handleScroll}
-      >
-        <div>
-          <Image src='/carselling.png' alt='Car Selling Site'  height={368} width={960} objectFit='contain'/>
-        </div>
-      </Card>
+        imgSrc={'/CarRentBoth.png'}
+        cardAlt='Car Renting and Selling'
+      />
       
       <div className='flex justify-between font-mono'>
         <ul className='text-blue-500 list-disc pl-5 pt-5'>

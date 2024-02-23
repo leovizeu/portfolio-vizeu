@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MouseEventHandler } from "react";
+import { AnchorHTMLAttributes, MouseEventHandler, RefAttributes } from "react";
 
 export interface CustomButtomProps {
     title: string;
@@ -10,8 +10,11 @@ export interface CustomButtomProps {
 
 export interface CardProps {
     title: string;
-    image: typeof Image;
-    href: string;
+    title2: string;
+    imgSrc: string;
+    cardAlt: string;
+    live: RefAttributes<HTMLAnchorElement> & AnchorHTMLAttributes<HTMLAnchorElement>["href"];
+    code: RefAttributes<HTMLAnchorElement> & AnchorHTMLAttributes<HTMLAnchorElement>["href"];
     handleClick?:
     MouseEventHandler<HTMLButtonElement>;
 }
