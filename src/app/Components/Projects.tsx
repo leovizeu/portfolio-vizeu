@@ -13,16 +13,16 @@ function Projects() {
 
   return (
     <div id='projects'>
-      <h1 className="flex justify-center pl-7 text-white text-2xl">
+      <h1 className="flex justify-center pl-7 text-white text-2xl mb-8">
         <div className="flex absolute pr-44 uppercase tracking-wide text-2xl text-blue-500 font-semibold">
           2.
         </div>
           My Projects
       </h1>
 
-      <div className='flex justify-center gap-6'>
+      <div className='flex justify-center gap-6 max-sm:flex-col max-sm:items-center'>
         <Card 
-          title={'Car Renting'}
+          title={'Car Renting and Selling'}
           title2={'SourceCode'}
           live={'https://car-selling-site-nine.vercel.app'}
           code={'https://github.com/leovizeu/car-selling-site'}
@@ -37,9 +37,20 @@ function Projects() {
           live={'https://car-selling-site-nine.vercel.app'}
           code={'https://github.com/leovizeu/car-selling-site'}
           handleClick={handleScroll}
-          imgSrc={'/CarRentBoth.png'}
-          cardAlt='Car Renting and Selling'
+          imgSrc={'/HopeBoth.png'}
+          cardAlt='You are the Hope NGO'
         />
+
+        <Card 
+          title={'School for Young'}
+          title2={'SourceCode'}
+          live={'https://car-selling-site-nine.vercel.app'}
+          code={'https://github.com/leovizeu/car-selling-site'}
+          handleClick={handleScroll}
+          imgSrc={'/YoungSchoolBoth.png'}
+          cardAlt='You are the Hope NGO'
+        />
+
       </div>
       
       <div className='flex justify-between font-mono'>
