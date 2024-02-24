@@ -20,15 +20,27 @@ function Projects() {
           My Projects
       </h1>
 
-      <Card 
-        title={'Car Renting'}
-        title2={'SourceCode'}
-        live={'https://car-selling-site-nine.vercel.app'}
-        code={'https://github.com/leovizeu/car-selling-site'}
-        handleClick={handleScroll}
-        imgSrc={'/CarRentBoth.png'}
-        cardAlt='Car Renting and Selling'
-      />
+      <div className='flex justify-center gap-6'>
+        <Card 
+          title={'Car Renting'}
+          title2={'SourceCode'}
+          live={'https://car-selling-site-nine.vercel.app'}
+          code={'https://github.com/leovizeu/car-selling-site'}
+          handleClick={handleScroll}
+          imgSrc={'/CarRentBoth.png'}
+          cardAlt='Car Renting and Selling'
+        />
+
+        <Card 
+          title={'You Are the Hope'}
+          title2={'SourceCode'}
+          live={'https://car-selling-site-nine.vercel.app'}
+          code={'https://github.com/leovizeu/car-selling-site'}
+          handleClick={handleScroll}
+          imgSrc={'/CarRentBoth.png'}
+          cardAlt='Car Renting and Selling'
+        />
+      </div>
       
       <div className='flex justify-between font-mono'>
         <ul className='text-blue-500 list-disc pl-5 pt-5'>
