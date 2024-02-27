@@ -3,11 +3,20 @@
 import Tilt from 'react-parallax-tilt';
 import Image from 'next/image';
 import { CardProps } from '../../../types';
-import ModalRoute from './ModalRoute';
+import { useRouter } from 'next/router';
 
 function Card ({title, title2, handleClick, imgSrc, cardAlt, live, code}: CardProps) {
+  let router = useRouter();
   return (
     <div className="h-full w-80 relative overflow-hidden flex flex-col justify-center items-center">
+        {router.query.ModalRoute && (
+          <Modal onClose={() =>{
+            router.push("/")
+        }}>
+
+        </Modal>
+        )}
+        
       <Tilt>
         <div className="flex justify-center container h-60 w-60 bg-white bg-opacity-10 rounded-2xl shadow-5xl 
         relative z-2 border border-opacity-30 border-r-0 border-b-0 backdrop-filter backdrop-blur-sm mb-3">
