@@ -20,7 +20,7 @@ function Projects() {
           My Projects
       </h1>
 
-      <div className='flex justify-center gap-6 max-sm:flex-col max-sm:items-center'>
+      <div className='flex justify-center gap-6 max-md:flex-col max-md:items-center'>
         <Card 
           title={'Car Renting and Selling'}
           title2={'SourceCode'}
