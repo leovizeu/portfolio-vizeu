@@ -34,8 +34,8 @@ function Projects() {
         <Card 
           title={'You Are the Hope'}
           title2={'SourceCode'}
-          live={'https://car-selling-site-nine.vercel.app'}
-          code={'https://github.com/leovizeu/car-selling-site'}
+          live={'https://leovizeu.github.io/fictitious-NGO/'}
+          code={'https://github.com/leovizeu/fictitious-NGO'}
           handleClick={handleScroll}
           imgSrc={'/HopeBoth.png'}
           cardAlt='You are the Hope NGO'
@@ -44,8 +44,8 @@ function Projects() {
         <Card 
           title={'School for Young'}
           title2={'SourceCode'}
-          live={'https://car-selling-site-nine.vercel.app'}
-          code={'https://github.com/leovizeu/car-selling-site'}
+          live={'https://leovizeu.github.io/Prep-School/'}
+          code={'https://github.com/leovizeu/Prep-School'}
           handleClick={handleScroll}
           imgSrc={'/YoungSchoolBoth.png'}
           cardAlt='You are the Hope NGO'
@@ -66,17 +66,8 @@ function Projects() {
         </ul>
       </div>
 
-      <div className='flex justify-center mt-16'>
-        <div>
-        <Image src='/ngo-desktop1.png' alt='NGO Desktop' height={0} width={720}></Image>
-        </div>
-        <div>
-        <Image src='/ngo-phone1.png' alt='NGO Desktop' height={0} width={200}></Image>
-        </div>
-      </div>
-
       <div>
-        <p className='text-black text-1xl font-normal text-center p-10'>
+        <p className='text-white text-1xl font-normal text-center p-10'>
           This project I made for a free Web Design course from FATEC Technology School.
           <br />
           The objective of this is to build a full responsive site from scratch using some easy-to-use technologies.
