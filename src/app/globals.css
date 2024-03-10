@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    .btn {
+      @apply flex justify-center rounded-lg p-2 bg-blue-500 text-white font-bold text-sm hover:text-blue-500 hover:bg-white duration-500
+    }
+    
+    .btn-ouotline {
+      @apply border border-blue-500 text-blue-500 font-bold rounded-md px-2 py-1 hover:text-white duration-500
+    }
+}
+
 .custom-shape-divider-bottom-1706022153 {
   position: absolute;
   bottom: 0;

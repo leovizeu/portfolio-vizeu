@@ -4,6 +4,7 @@ import { CustomButtom } from ".";
 import Image from "next/image";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion"
 
 function Hero() {
 
@@ -31,11 +32,11 @@ function Hero() {
 
     return (
         <div className="font-mono">
-            <div className="py-80 pl-3 md:pl-12">
-                <p className="text-blue-500 font-light py-2 inline-block whitespace-nowrap overflow-hidden">
+            <motion.div initial={{ x:-1000 }} animate={{ x: 0 }} transition={{ delay: 0.2 }} className="py-80 pl-3 md:pl-12">
+                <p className="text-blue-500 font-light inline-block whitespace-nowrap overflow-hidden">
                     {Typo()}
                 </p>
-                <h1 className="text-white text-4xl font-bold py-2 font-sans">
+                <h1 className="text-white text-4xl font-bold font-sans duration-100">
                     Leonardo Vizeu
                     <br />
                     I like building online experiences.
@@ -73,9 +74,9 @@ function Hero() {
                     
                 </div>
                 
-            </div>
+            </motion.div>
             
-            <div className="xl:py-20 xl:px-10" id="about">
+            <motion.div initial={{ x: -800 }} whileInView={{ x: 0 }} className="xl:py-20 xl:px-10" id="about">
                 <div className="md:flex">
                     <div className="md:flex md:items-center md:shrink-0">
                         <Image 
@@ -86,7 +87,7 @@ function Hero() {
                         className="aspect-square object-none object-top rounded-full md:h-60 md:w-60 md:object-cover"
                         />
                     </div>
-                    <div className="p-8">
+                    <motion.div initial={{ x: 800 }} whileInView={{ x: 0 }} transition={{ delay: 1 }} className="p-8">
                         <div className="flex absolute uppercase tracking-wide text-xl text-blue-500 font-semibold">
                             0.
                         </div>
@@ -116,9 +117,9 @@ function Hero() {
                                 <li>Python</li>
                             </ul>  
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

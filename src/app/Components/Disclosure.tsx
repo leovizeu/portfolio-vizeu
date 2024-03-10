@@ -56,7 +56,8 @@ export default function Example() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-100 px-4 py-2 text-left text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-100 px-4 py-2 text-left 
+              text-sm font-medium text-blue-900 hover:bg-blue-500 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75">
                 <span>Facilities and Services</span>
                 <ChevronUpIcon
                   className={`${
@@ -85,7 +86,8 @@ export default function Example() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-100 px-4 py-2 text-left text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-100 px-4 py-2 text-left 
+              text-sm font-medium text-blue-900 hover:bg-blue-500 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75">
                 <span>Conclusion</span>
                 <ChevronUpIcon
                   className={`${

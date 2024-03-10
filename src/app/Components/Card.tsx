@@ -22,11 +22,11 @@ function Card ({title, title2, handleClick, imgSrc, cardAlt, live, code}: CardPr
         </div>
       </Tilt>
       <div className='flex flex-col gap-2'>
-        <span className={`flex justify-center text-white bg-blue-500 rounded-md p-1 font-poppins text-1xl`}>
+        <span className='btn'>
           <a className='w-40 h-8 absolute' href={live} target='about_blank'></a>
           {title}
         </span>
-        <span className='flex justify-center text-white bg-blue-500 rounded-md p-1 font-poppins text-1xl'>
+        <span className='btn'>
           <a className='w-40 h-8 absolute' href={code} target='about_blank'></a>
           {title2}
         </span>

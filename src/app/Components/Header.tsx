@@ -20,10 +20,12 @@ function MyHeader() {
     {list: '3',name: 'Contact', href: '#contact'},
   ]
     return (
-        <header className='fixed backdrop-blur shadow-md w-full blue-sm top-0 left-0 font-mono'>
-          <div className="md:flex items-center justify-between sm:px-20 px-6 py-8 xl:px-56">
+        <header className='z-50 fixed backdrop-blur shadow-md w-full blue-sm top-0 left-0 font-mono'>
+          <div className="md:flex items-center justify-between sm:px-20 px-6 py-2 xl:px-56">
             <div className="font-bold text-2xl cursor-pointer flex items-center text-white">
+              <a href="#home">
               Portfolio
+              </a>
             </div>
             <ul className='flex justify-end md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] 
             left-0 w-full'>
