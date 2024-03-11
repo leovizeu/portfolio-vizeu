@@ -27,7 +27,7 @@ function MyHeader() {
               Portfolio
               </a>
             </div>
-            <ul className='flex justify-end md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] 
+            <div className='flex justify-end md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] 
             left-0 w-full'>
               {
                 Links.map((link =>
@@ -43,9 +43,9 @@ function MyHeader() {
                   containerStyles = "border border-blue-500 text-blue-500 font-bold rounded-md px-2 py-1 hover:text-white duration-500"
                   handleClick = {handleScroll}
               />
-          </div>
-              </ul>
+              </div>
             </div>
+          </div>
         </header>
     )
 }

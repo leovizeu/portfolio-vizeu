@@ -66,19 +66,19 @@ function Hero() {
                     </a>   
                     </div>
                     <div className="flex px-2 items-center">
-                     <a href="https://www.linkedin.com/in/leovizeu/" target="_blank">
-                        <Image src='/linked.svg' height={25} width={30} alt="Github Logo"  
-                        className="transition ease-in-out delay-150 hover:-translate-y-1 duration-80"></Image>
-                    </a>   
+                        <a href="https://www.linkedin.com/in/leovizeu/" target="_blank">
+                            <Image src='/linked.svg' height={25} width={30} alt="Github Logo"  
+                            className="transition ease-in-out delay-150 hover:-translate-y-1 duration-80"></Image>
+                        </a>   
                     </div>
                     
                 </div>
                 
             </motion.div>
             
-            <motion.div initial={{ x: -800 }} whileInView={{ x: 0 }} className="xl:py-20 xl:px-10" id="about">
+            <div className="xl:py-20 xl:px-10" id="about">
                 <div className="md:flex">
-                    <div className="md:flex md:items-center md:shrink-0">
+                    <motion.div initial={{ x: -500 }} whileInView={{ x: 0 }} className="md:flex md:items-center md:shrink-0">
                         <Image 
                         src='/DSCF1428.jpg' 
                         height={550} 
@@ -86,8 +86,8 @@ function Hero() {
                         alt="Leonardo's photo"
                         className="aspect-square object-none object-top rounded-full md:h-60 md:w-60 md:object-cover"
                         />
-                    </div>
-                    <motion.div initial={{ x: 800 }} whileInView={{ x: 0 }} transition={{ delay: 1 }} className="p-8">
+                    </motion.div>
+                    <motion.div initial={{ x: 900 }} whileInView={{ x: 0 }} transition={{ delay: 1 }} className="p-8">
                         <div className="flex absolute uppercase tracking-wide text-xl text-blue-500 font-semibold">
                             0.
                         </div>
@@ -119,7 +119,7 @@ function Hero() {
                         </div>
                     </motion.div>
                 </div>
-            </motion.div>
+            </div>
         </div>
     )
 }
