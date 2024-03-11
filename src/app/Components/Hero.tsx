@@ -1,8 +1,8 @@
 "use client";
 
-import { CustomButtom } from ".";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import { CustomButtom } from ".";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion"
 
@@ -87,7 +87,7 @@ function Hero() {
                         className="aspect-square object-none object-top rounded-full md:h-60 md:w-60 md:object-cover"
                         />
                     </motion.div>
-                    <motion.div initial={{ x: 900 }} whileInView={{ x: 0 }} transition={{ delay: 1 }} className="p-8">
+                    <motion.div initial={{ x: 900 }} whileInView={{ x: 0 }} transition={{ delay: 0.1 }} className="p-8">
                         <div className="flex absolute uppercase tracking-wide text-xl text-blue-500 font-semibold">
                             0.
                         </div>

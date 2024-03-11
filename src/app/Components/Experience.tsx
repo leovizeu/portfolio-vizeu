@@ -1,10 +1,9 @@
-import { motion } from 'framer-motion'
 import React from 'react'
+import { motion } from "framer-motion"
 
-const Experience = () => {
+function Experience() {
   return (
     <div className="text-center p-8 md:py-32" id='experience'>
-      <div>
         <div className="flex justify-center pl-7 text-white text-2xl pb-6">
           <div className="flex absolute pr-48 uppercase tracking-wide text-2xl text-blue-500 font-semibold">
             1.
@@ -16,7 +15,6 @@ const Experience = () => {
             Portfolio
           </a>
         </div>
-      </div>
       <div>
         <h2 className='text-white text-xl pb-6'>
           Full Stack Developer
