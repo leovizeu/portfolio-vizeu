@@ -53,7 +53,7 @@ function Projects() {
 
       </div>
       
-      <div className='flex justify-between font-mono'>
+      {/* <div className='flex justify-between font-mono'>
         <ul className='text-blue-500 list-disc pl-5 pt-5'>
           <li>
             <Link href="/?projeto=1" legacyBehavior>
@@ -92,7 +92,7 @@ function Projects() {
           containerStyles = "bg-blue-200 text-blue-700 font-bold rounded-full p-2 hover:bg-blue-500 hover:text-white"
           handleClick = {handleScroll}
         />
-      </div>
+      </div>*/}
     </div>
   )
 }
